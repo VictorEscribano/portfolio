@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Víctor Escribano García — AI Engineer</title>
+  <meta name="description" content="Víctor Escribano García — AI Engineer specialized in Computer Vision, Robotics Perception and Deep Learning. MSc in Robotics & Automatic Control (UPC)." />
+  <meta name="author" content="Víctor Escribano García" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Víctor Escribano García — AI Engineer" />
+  <meta property="og:description" content="AI Engineer · Computer Vision · Robotics Perception · Deep Learning" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/ecoracing-studio.webp" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230b0f17'/%3E%3Ctext x='50' y='68' font-size='54' font-family='Arial' font-weight='bold' fill='%2335e0c0' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- animated background -->
+  <div class="bg-fx" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="nav" id="nav">
+    <a href="#hero" class="nav__logo">
+      <span class="nav__logo-mark">V</span>
+      <span class="nav__logo-text">Víctor Escribano</span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a href="assets/Victor_Escribano_CV.pdf" class="nav__cv" target="_blank" rel="noopener">Resume ↗</a>
+    </nav>
+    <button class="nav__burger" id="burger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__inner">
+      <div class="hero__text reveal">
+        <p class="hero__eyebrow"><span class="dot"></span> Available for collaborations · Barcelona, Spain</p>
+        <h1 class="hero__title">
+          Víctor <span class="grad">Escribano</span>
+        </h1>
+        <h2 class="hero__role" id="typed">AI Engineer</h2>
+        <p class="hero__desc">
+          I build <strong>computer vision</strong> and <strong>deep learning</strong> systems for
+          robotics and real-world perception — from autonomous vehicles and agricultural robots
+          to real-time people tracking and foveated small-object detection.
+        </p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">View Projects</a>
+          <a href="#contact" class="btn btn--ghost">Get in touch</a>
+        </div>
+        <div class="hero__socials">
+          <a href="https://github.com/VictorEscribano" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-1.7c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/victor-escribano-garcia-301774150/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 110-4.14 2.07 2.07 0 010 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          </a>
+          <a href="mailto:vesgarcia99@gmail.com" aria-label="Email" title="Email">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 12.7L1.5 6.1A2 2 0 013 5.5h18a2 2 0 011.5.6L12 12.7zm0 2.3L1 8.3V18a2 2 0 002 2h18a2 2 0 002-2V8.3L12 15z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__photo reveal">
+        <div class="hero__photo-ring"></div>
+        <img src="assets/img/profile.jpg" alt="Víctor Escribano García" loading="eager" />
+        <div class="hero__badge">
+          <span class="hero__badge-num">5+</span>
+          <span class="hero__badge-lbl">years building<br>vision systems</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Computer Vision</span><span>•</span><span>Deep Learning</span><span>•</span>
+        <span>Robotics Perception</span><span>•</span><span>Object Tracking</span><span>•</span>
+        <span>ROS</span><span>•</span><span>PyTorch</span><span>•</span><span>Sensor Fusion</span><span>•</span>
+        <span>Generative AI</span><span>•</span>
+        <span>Computer Vision</span><span>•</span><span>Deep Learning</span><span>•</span>
+        <span>Robotics Perception</span><span>•</span><span>Object Tracking</span><span>•</span>
+        <span>ROS</span><span>•</span><span>PyTorch</span><span>•</span><span>Sensor Fusion</span><span>•</span>
+        <span>Generative AI</span><span>•</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="section__head reveal">
+      <span class="section__num">01</span>
+      <h2 class="section__title">About me</h2>
+    </div>
+    <div class="about__grid">
+      <div class="about__text reveal">
+        <p>
+          I'm an <strong>Industrial Electronics &amp; Automatic Control Engineer</strong> with an
+          <strong>MSc in Robotics and Automatic Control</strong> from the Polytechnic University of
+          Catalonia (UPC). Today I work as an <strong>AI Engineer</strong> at Escribano Mechanical
+          &amp; Engineering, building real-time tracking and deep learning perception for autonomous robotic systems.
+        </p>
+        <p>
+          My path runs through autonomous racing, agricultural robots, astrophysics instrumentation
+          and award-winning hackathons. The common thread: turning cameras, sensors and neural
+          networks into systems that perceive and act in the real world.
+        </p>
+        <blockquote class="about__quote">
+          “There may be no better way to communicate my passion and expertise than through the
+          projects showcased below. Each one represents a unique problem solved and a step forward
+          in my journey as an engineer.”
+        </blockquote>
+      </div>
+      <div class="about__cards reveal">
+        <div class="stat">
+          <span class="stat__k">MSc</span>
+          <span class="stat__v">Robotics &amp; Automatic Control · UPC</span>
+        </div>
+        <div class="stat">
+          <span class="stat__k">🏆 1st</span>
+          <span class="stat__v">HackUPC 2023 — Overall Winners</span>
+        </div>
+        <div class="stat">
+          <span class="stat__k">🥈 2nd</span>
+          <span class="stat__v">Best autonomous car · Formula Student Spain 2020</span>
+        </div>
+        <div class="stat">
+          <span class="stat__k">🎓 Honors</span>
+          <span class="stat__v">Final thesis — Inverse Perspective Mapping</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section experience" id="experience">
+    <div class="section__head reveal">
+      <span class="section__num">02</span>
+      <h2 class="section__title">Experience</h2>
+    </div>
+    <div class="timeline">
+
+      <div class="tl reveal">
+        <div class="tl__dot"></div>
+        <div class="tl__card">
+          <div class="tl__top">
+            <h3>AI Engineer</h3>
+            <span class="tl__date">Jun 2025 — Present</span>
+          </div>
+          <p class="tl__org">Escribano Mechanical &amp; Engineering (EM&amp;E) · Barcelona</p>
+          <ul>
+            <li>Built a real-time "follow-me" person-following system for autonomous robotic platforms — detecting, tracking and re-identifying people on a CPU-only embedded device, fusing LiDAR and camera and processing point clouds in real time.</li>
+            <li>Designing new deep learning models — such as hyperbolic foveation imaging to detect small objects — that focus high-resolution sampling on the region of interest while cutting peripheral compute.</li>
+            <li>Deploying and optimizing deep learning inference on embedded edge hardware for low-latency on-device perception.</li>
+          </ul>
+          <div class="tags">
+            <span>Python</span><span>PyTorch</span><span>OpenVINO</span><span>Object Tracking</span><span>Re-ID</span><span>LiDAR–Camera Fusion</span><span>Point Clouds</span><span>Embedded (CPU)</span><span>ROS2</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl reveal">
+        <div class="tl__dot"></div>
+        <div class="tl__card">
+          <div class="tl__top">
+            <h3>Robotics Perception Engineer</h3>
+            <span class="tl__date">Feb 2024 — Jun 2025</span>
+          </div>
+          <p class="tl__org">Earth Rover</p>
+          <ul>
+            <li>Built perception systems for autonomous navigation in ground-based agricultural robots.</li>
+            <li>Enhanced computer vision models using synthetic data and generative-AI augmentations.</li>
+          </ul>
+          <div class="tags">
+            <span>C++</span><span>ROS</span><span>Gazebo</span><span>Point Clouds</span><span>Blender</span><span>YOLO</span><span>Stable Diffusion</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl reveal">
+        <div class="tl__dot"></div>
+        <div class="tl__card">
+          <div class="tl__top">
+            <h3>QA Automation Engineer</h3>
+            <span class="tl__date">Feb 2023 — Jan 2024</span>
+          </div>
+          <p class="tl__org">Bertrandt</p>
+          <ul>
+            <li>Developed Python automation for protocol trace analysis and validation under SCRUM.</li>
+            <li>Designed test catalogs from client requirement specifications.</li>
+          </ul>
+          <div class="tags">
+            <span>Python</span><span>Selenium</span><span>FastAPI</span><span>OpenCV</span><span>CANoe</span><span>PyAutoGUI</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl reveal">
+        <div class="tl__dot"></div>
+        <div class="tl__card">
+          <div class="tl__top">
+            <h3>Software Engineer (Scholarship)</h3>
+            <span class="tl__date">Jul 2022 — Oct 2024</span>
+          </div>
+          <p class="tl__org">Canary Islands Institute of Astrophysics (IAC)</p>
+          <ul>
+            <li>Developed a hardware-agnostic telescope pointing estimator to minimize ephemerides waiting times, accelerated with Numba.</li>
+            <li>Collaborated with Military Defense on detecting and tracking satellites and space debris.</li>
+            <li>Upgraded the IAC80 &amp; TCS telescope control systems with a pyQt + ROS1 real-time interface.</li>
+          </ul>
+          <div class="tags">
+            <span>Python</span><span>Numba</span><span>pyQt</span><span>ROS1</span><span>Space Surveillance</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl reveal">
+        <div class="tl__dot"></div>
+        <div class="tl__card">
+          <div class="tl__top">
+            <h3>Driverless Perception Engineer</h3>
+            <span class="tl__date">Jan 2020 — Sep 2022</span>
+          </div>
+          <p class="tl__org">UPC ecoRacing · Formula Student</p>
+          <ul>
+            <li>Designed the perception system (camera + LiDAR) of UPC's first autonomous racing vehicle.</li>
+            <li>Implemented mono &amp; stereo vision, real-time object classification and sensor fusion.</li>
+            <li>2nd best autonomous racing car in Formula Student Spain 2020.</li>
+          </ul>
+          <div class="tags">
+            <span>Python</span><span>C++</span><span>ROS1</span><span>OpenCV</span><span>YOLO</span><span>CUDA</span><span>TensorRT</span><span>LiDAR</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl reveal">
+        <div class="tl__dot"></div>
+        <div class="tl__card">
+          <div class="tl__top">
+            <h3>Robotics Specialist (Internship)</h3>
+            <span class="tl__date">Sep 2021 — Jan 2022</span>
+          </div>
+          <p class="tl__org">Alisys Robotics</p>
+          <ul>
+            <li>Built real-time face recognition systems for mobile and medical robots.</li>
+            <li>Studied and documented an omni-transportation platform for medical robots.</li>
+          </ul>
+          <div class="tags">
+            <span>OpenCV</span><span>ROS1</span><span>Flask</span><span>Tkinter</span><span>MATLAB</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section projects" id="projects">
+    <div class="section__head reveal">
+      <span class="section__num">03</span>
+      <h2 class="section__title">Selected Projects</h2>
+    </div>
+    <div class="proj-grid">
+
+      <article class="card reveal card--wide">
+        <a class="card__cover" href="projects/iac-telescope-pointing.html" aria-label="Open TelescopePointingEstimator case study"></a>
+        <div class="card__media">
+          <img src="assets/img/proj/iac_frame.png" alt="TelescopePointingEstimator at the IAC" loading="lazy" />
+        </div>
+        <div class="card__body">
+          <h3>TelescopePointingEstimator — IAC</h3>
+          <p>Modernized the Teide Observatory night-telescope control systems (ROS + pyQt) and built a hardware-agnostic, Numba-accelerated pointing estimator that maximizes satellite captures per night — 0.9&nbsp;s average wait, ~3.2 images/min.</p>
+          <div class="tags"><span>Python</span><span>Numba</span><span>ROS</span><span>pyQt</span><span>Astronomy</span></div>
+          <div class="card__links">
+            <a class="card__link" href="projects/iac-telescope-pointing.html">Case study →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <a class="card__cover" href="projects/synthetic-crack-dataset.html" aria-label="Open Synthetic Crack Dataset case study"></a>
+        <div class="card__media">
+          <img src="assets/img/crack-dataset.jpg" alt="Synthetic crack dataset" loading="lazy" />
+        </div>
+        <div class="card__body">
+          <h3>Synthetic Crack Dataset — Blender</h3>
+          <p>A Blender-based synthetic pipe-crack generator producing diverse, automatically labeled images for advanced segmentation and YOLOv8 training — tested on real images with strong results on challenging scenarios.</p>
+          <div class="tags"><span>Blender</span><span>YOLOv8</span><span>Synthetic Data</span><span>Segmentation</span></div>
+          <div class="card__links">
+            <a class="card__link" href="projects/synthetic-crack-dataset.html">Case study →</a>
+            <a class="card__link card__link--ext" href="https://github.com/VictorEscribano/Synthetic-Pipe-Crack-Dataset-Blender" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <a class="card__cover" href="projects/ipm-gan.html" aria-label="Open IPM GAN case study"></a>
+        <div class="card__media">
+          <img src="assets/img/ipm-gan.gif" alt="IPM GAN top-view generation" loading="lazy" />
+        </div>
+        <div class="card__body">
+          <h3>IPM GAN</h3>
+          <p>Generating a top-view map (Inverse Perspective Mapping) directly from a front camera view using Generative Adversarial Networks.</p>
+          <div class="tags"><span>GAN</span><span>PyTorch</span><span>IPM</span></div>
+          <div class="card__links">
+            <a class="card__link" href="projects/ipm-gan.html">Case study →</a>
+            <a class="card__link card__link--ext" href="https://github.com/VictorEscribano/IPM_GAN" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <a class="card__cover" href="projects/hackupc-2023.html" aria-label="Open HackUPC 2023 case study"></a>
+        <div class="card__media">
+          <img src="assets/img/hackupc.png" alt="HackUPC 2023 winners" loading="lazy" />
+        </div>
+        <div class="card__body">
+          <h3>HackUPC 2023 — 🏆 Winners</h3>
+          <p>Overall winners in under 36h: real-estate interior remodeling fusing the Segment Anything Model, the Restb.ai API and Stable Diffusion, with a VR/Blender spherical-projection UI.</p>
+          <div class="tags"><span>SAM</span><span>Stable Diffusion</span><span>VR</span><span>Restb.ai</span></div>
+          <div class="card__links">
+            <a class="card__link" href="projects/hackupc-2023.html">Case study →</a>
+            <a class="card__link card__link--ext" href="https://github.com/VictorEscribano/Hackupc2023-DahTeam" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <a class="card__cover" href="projects/ecord-2020.html" aria-label="Open ecoRD 2020/21 case study"></a>
+        <div class="card__media">
+          <img src="assets/img/ecoracing-track.jpg" alt="UPC ecoRacing first autonomous car" loading="lazy" />
+        </div>
+        <div class="card__body">
+          <h3>ecoRD 2020/21 — Driverless</h3>
+          <p>Camera + LiDAR perception for UPC ecoRacing's <strong>first</strong> autonomous vehicle, leading to the 2nd best autonomous car at Formula Student Spain 2020/21.</p>
+          <div class="tags"><span>Sensor Fusion</span><span>LiDAR</span><span>ROS</span><span>TensorRT</span></div>
+          <div class="card__links">
+            <a class="card__link" href="projects/ecord-2020.html">Case study →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <a class="card__cover" href="projects/ecord-2021.html" aria-label="Open ecoRD 2021/22 case study"></a>
+        <div class="card__media">
+          <img src="assets/img/ecoracing-studio.webp" alt="UPC ecoRacing second-generation autonomous car" loading="lazy" />
+        </div>
+        <div class="card__body">
+          <h3>ecoRD 2021/22 — Driverless</h3>
+          <p>A camera-based perception system for UPC ecoRacing's <strong>second-generation</strong> autonomous car during the 2021/22 season.</p>
+          <div class="tags"><span>Computer Vision</span><span>YOLO</span><span>ROS</span><span>TensorRT</span></div>
+          <div class="card__links">
+            <a class="card__link" href="projects/ecord-2021.html">Case study →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <a class="card__cover" href="projects/frontier-exploration.html" aria-label="Open Last Frontier Exploration case study"></a>
+        <div class="card__media">
+          <img src="assets/img/exploration.jpg" alt="Frontier exploration in ROS2" loading="lazy" />
+        </div>
+        <div class="card__body">
+          <h3>Last Frontier Exploration</h3>
+          <p>A personal improvement on closest-frontier autonomous exploration in ROS2 — mapping and navigating unknown indoor environments.</p>
+          <div class="tags"><span>ROS2</span><span>SLAM</span><span>Autonomy</span></div>
+          <div class="card__links">
+            <a class="card__link" href="projects/frontier-exploration.html">Case study →</a>
+            <a class="card__link card__link--ext" href="https://github.com/VictorEscribano/PECORE" target="_blank" rel="noopener">GitHub ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="card reveal card--wide">
+        <a class="card__cover" href="projects/tennis-analysis.html" aria-label="Open Tennis Movement Analysis case study"></a>
+        <div class="card__media">
+          <img src="assets/img/tennis.jpg" alt="Tennis movement analysis" loading="lazy" />
+        </div>
+        <div class="card__body">
+          <h3>Tennis Movement Analysis</h3>
+          <p>Inspired by the US Open final (Alcaraz vs. Ruud): YOLO detects and classifies both players, and planar homographies project a live top-view court to visualize their movement heatmaps.</p>
+          <div class="tags"><span>YOLO</span><span>Homography</span><span>OpenCV</span></div>
+          <div class="card__links">
+            <a class="card__link" href="projects/tennis-analysis.html">Case study →</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section skills" id="skills">
+    <div class="section__head reveal">
+      <span class="section__num">04</span>
+      <h2 class="section__title">Skills &amp; Tools</h2>
+    </div>
+    <div class="skills__grid">
+      <div class="skillset reveal">
+        <h3>Languages</h3>
+        <div class="chips"><span>Python</span><span>C++</span><span>MATLAB</span></div>
+      </div>
+      <div class="skillset reveal">
+        <h3>AI / Computer Vision</h3>
+        <div class="chips"><span>PyTorch</span><span>TensorFlow</span><span>OpenCV</span><span>YOLO</span><span>GANs</span><span>Stable Diffusion</span><span>SAM</span><span>Object Tracking</span><span>Re-ID</span></div>
+      </div>
+      <div class="skillset reveal">
+        <h3>Robotics</h3>
+        <div class="chips"><span>ROS1</span><span>ROS2</span><span>Gazebo</span><span>Sensor Fusion</span><span>LiDAR</span><span>Point Clouds</span></div>
+      </div>
+      <div class="skillset reveal">
+        <h3>Deploy &amp; Acceleration</h3>
+        <div class="chips"><span>OpenVINO</span><span>TensorRT</span><span>CUDA</span><span>Numba</span><span>NVIDIA Jetson</span><span>Linux</span><span>Git</span></div>
+      </div>
+      <div class="skillset reveal">
+        <h3>Languages (spoken)</h3>
+        <div class="chips"><span>Spanish — native</span><span>Catalan — native</span><span>English — B2</span></div>
+      </div>
+      <div class="skillset reveal">
+        <h3>Also</h3>
+        <div class="chips"><span>Blender</span><span>FastAPI</span><span>pyQt</span><span>3D Printing</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="contact__box reveal">
+      <span class="section__num">05</span>
+      <h2 class="contact__title">Let's build something that <span class="grad">sees</span>.</h2>
+      <p class="contact__sub">Open to AI / computer-vision &amp; robotics opportunities and collaborations.</p>
+      <a href="mailto:vesgarcia99@gmail.com" class="btn btn--primary btn--lg">vesgarcia99@gmail.com</a>
+      <div class="contact__links">
+        <a href="https://github.com/VictorEscribano" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/victor-escribano-garcia-301774150/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="assets/Victor_Escribano_CV.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Víctor Escribano García · Designed &amp; built with care.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

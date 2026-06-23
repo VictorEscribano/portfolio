@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deep Tour — HackUPC 2023 — Víctor Escribano</title>
+  <meta name="description" content="A Blender plugin for 360º VR real-estate tours with on-the-fly room restyling — built in under 36 hours."/>
+  <meta property="og:title" content="Deep Tour — HackUPC 2023 — Víctor Escribano"/>
+  <meta property="og:description" content="A Blender plugin for 360º VR real-estate tours with on-the-fly room restyling — built in under 36 hours."/>
+  <meta property="og:image" content="../assets/img/hackupc.png"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230b0f17'/%3E%3Ctext x='50' y='68' font-size='54' font-family='Arial' font-weight='bold' fill='%2335e0c0' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E"/>
+  <link rel="stylesheet" href="../styles.css"/>
+  <link rel="stylesheet" href="../project.css"/>
+</head>
+<body class="pdetail">
+  <div class="bg-fx" aria-hidden="true">
+    <div class="blob blob-1"></div><div class="blob blob-2"></div><div class="blob blob-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <header class="nav scrolled">
+    <a href="../index.html" class="nav__logo">
+      <span class="nav__logo-mark">V</span>
+      <span class="nav__logo-text">Víctor Escribano</span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#experience">Experience</a>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#contact">Contact</a>
+      <a href="../assets/Victor_Escribano_CV.pdf" class="nav__cv" target="_blank" rel="noopener">Resume ↗</a>
+    </nav>
+  </header>
+
+  <main class="pwrap reveal">
+    <a class="pback" href="../index.html#projects">← All projects</a>
+
+    <div class="phero">
+      <p class="phero__eyebrow">🏆 Overall winners · Generative AI · VR</p>
+      <h1>Deep Tour — HackUPC 2023</h1>
+      <p class="phero__tagline">A Blender plugin for 360º VR real-estate tours with on-the-fly room restyling — built in under 36 hours.</p>
+      <div class="pmeta">
+        <div class="tags"><span>Blender</span><span>Stable Diffusion</span><span>SAM</span><span>DINOv2</span><span>Restb.ai</span><span>VR</span></div>
+        <div class="pmeta__links"><a class="pbtn pbtn--gh" href="https://github.com/VictorEscribano/Hackupc2023-DahTeam" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </div>
+      <div class="phero__img"><img src="../assets/img/hackupc.png" alt="Deep Tour — HackUPC 2023"/></div>
+    </div>
+
+    <section class="psection prose">
+      <h2>Overview</h2>
+      <p><strong>Overall winners of HackUPC 2023.</strong> Deep Tour is a Blender plugin that delivers a full <strong>360º VR walkthrough</strong> of real-estate properties and lets users restyle any room on the fly.</p><p>Furniture is identified with <strong>Restb.ai</strong> and the <strong>Segment Anything Model (SAM)</strong>, and rooms are re-imagined using <strong>Stable Diffusion in-painting</strong> — all optimized to run on a standard laptop. My contribution fused the segmentation map of the HDRI panorama with the Restb.ai centroids and the spherical-coordinate projection that drives the VR experience.</p><p>Built in under 36 hours with a team of four.</p>
+    </section>
+
+    
+
+    <section class="psection">
+      <h2>Highlights</h2>
+      <ul class="plist"><li>360º VR property tours running inside Blender</li><li>On-the-fly room restyling via Stable Diffusion in-painting</li><li>Furniture identification with SAM + Restb.ai + DINOv2</li><li>Runs on standard laptops · built in &lt;36h · 🏆 1st place</li></ul>
+    </section>
+
+    <section class="psection">
+      <h2>Gallery</h2>
+      <div class="pgallery"><figure><img src="../assets/img/hackupc.png" alt="Presenting Deep Tour at the HackUPC 2023 finals — UPC" loading="lazy"/><figcaption>Presenting Deep Tour at the HackUPC 2023 finals — UPC</figcaption></figure><figure><img src="../assets/img/proj/hackupc_extra.jpg" alt="The team on stage at the HackUPC 2023 finals" loading="lazy"/><figcaption>The team on stage at the HackUPC 2023 finals</figcaption></figure></div>
+    </section>
+
+    <div class="pnext">
+      <span>© <span id="year"></span> Víctor Escribano García</span>
+      <a class="pback" href="../index.html#projects">← Back to all projects</a>
+    </div>
+  </main>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear();
+  document.querySelectorAll('.reveal').forEach(e=>e.classList.add('in'));</script>
+</body>
+</html>

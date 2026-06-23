@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ecoRD 2020/21 — Driverless Perception — Víctor Escribano</title>
+  <meta name="description" content="Camera + LiDAR perception for UPC ecoRacing&#x27;s first autonomous car — 2nd best driverless vehicle in Spain 2020/21."/>
+  <meta property="og:title" content="ecoRD 2020/21 — Driverless Perception — Víctor Escribano"/>
+  <meta property="og:description" content="Camera + LiDAR perception for UPC ecoRacing&#x27;s first autonomous car — 2nd best driverless vehicle in Spain 2020/21."/>
+  <meta property="og:image" content="../assets/img/ecoracing-track.jpg"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230b0f17'/%3E%3Ctext x='50' y='68' font-size='54' font-family='Arial' font-weight='bold' fill='%2335e0c0' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E"/>
+  <link rel="stylesheet" href="../styles.css"/>
+  <link rel="stylesheet" href="../project.css"/>
+</head>
+<body class="pdetail">
+  <div class="bg-fx" aria-hidden="true">
+    <div class="blob blob-1"></div><div class="blob blob-2"></div><div class="blob blob-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <header class="nav scrolled">
+    <a href="../index.html" class="nav__logo">
+      <span class="nav__logo-mark">V</span>
+      <span class="nav__logo-text">Víctor Escribano</span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#experience">Experience</a>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#contact">Contact</a>
+      <a href="../assets/Victor_Escribano_CV.pdf" class="nav__cv" target="_blank" rel="noopener">Resume ↗</a>
+    </nav>
+  </header>
+
+  <main class="pwrap reveal">
+    <a class="pback" href="../index.html#projects">← All projects</a>
+
+    <div class="phero">
+      <p class="phero__eyebrow">Robotics Perception · Formula Student</p>
+      <h1>ecoRD 2020/21 — Driverless Perception</h1>
+      <p class="phero__tagline">Camera + LiDAR perception for UPC ecoRacing's first autonomous car — 2nd best driverless vehicle in Spain 2020/21.</p>
+      <div class="pmeta">
+        <div class="tags"><span>ROS</span><span>C++</span><span>Python</span><span>LiDAR</span><span>Sensor Fusion</span><span>TensorRT</span><span>YOLO</span></div>
+        <div class="pmeta__links"><a class="pbtn" href="https://www.ecoracing.upc.edu/" target="_blank" rel="noopener">Formula Student ↗</a></div>
+      </div>
+      <div class="phero__img"><img src="../assets/img/ecoracing-track.jpg" alt="ecoRD 2020/21 — Driverless Perception"/></div>
+    </div>
+
+    <section class="psection prose">
+      <h2>Overview</h2>
+      <p>I developed the <strong>perception system</strong> — camera + LiDAR based — of UPC ecoRacing's <strong>first autonomous vehicle</strong>, leading to the <strong>2nd best autonomous car at Formula Student Spain 2020/21</strong>.</p><p>The stack covered camera calibration, mono and stereo computer vision, real-time cone detection and classification, and <strong>camera–LiDAR sensor fusion</strong> (Velodyne VLP16 + cameras), plus annotation tooling for regression networks and GPU-accelerated inference on a Jetson AGX.</p>
+    </section>
+
+    <section class="psection"><h2>Demo</h2><div class="pvideo"><video controls preload="none" playsinline poster="../assets/img/proj/poster_vsv.jpg"><source src="../assets/img/proj/ecoracing_vsv.mp4" type="video/mp4"/></video><p class="pvideo__cap">Autonomous run — real-time cone detection and 3D cone mapping</p></div></section>
+
+    <section class="psection">
+      <h2>Highlights</h2>
+      <ul class="plist"><li>Camera + LiDAR sensor fusion (Velodyne VLP16)</li><li>Real-time mono &amp; stereo cone detection and classification</li><li>Custom camera calibration and dataset annotation tools</li><li>Deployed on Jetson AGX with CUDA / TensorRT — 🥈 2nd in Spain 2020/21</li></ul>
+    </section>
+
+    <section class="psection">
+      <h2>Gallery</h2>
+      <div class="pgallery pgallery--single"><figure><img src="../assets/img/ecoracing-track.jpg" alt="The first autonomous vehicle running an autocross track" loading="lazy"/><figcaption>The first autonomous vehicle running an autocross track</figcaption></figure></div>
+    </section>
+
+    <div class="pnext">
+      <span>© <span id="year"></span> Víctor Escribano García</span>
+      <a class="pback" href="../index.html#projects">← Back to all projects</a>
+    </div>
+  </main>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear();
+  document.querySelectorAll('.reveal').forEach(e=>e.classList.add('in'));</script>
+</body>
+</html>

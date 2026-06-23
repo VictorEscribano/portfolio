@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tennis Movement Analysis — Víctor Escribano</title>
+  <meta name="description" content="Turning a broadcast tennis feed into a top-view movement and heatmap analysis of both players."/>
+  <meta property="og:title" content="Tennis Movement Analysis — Víctor Escribano"/>
+  <meta property="og:description" content="Turning a broadcast tennis feed into a top-view movement and heatmap analysis of both players."/>
+  <meta property="og:image" content="../assets/img/tennis.jpg"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230b0f17'/%3E%3Ctext x='50' y='68' font-size='54' font-family='Arial' font-weight='bold' fill='%2335e0c0' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E"/>
+  <link rel="stylesheet" href="../styles.css"/>
+  <link rel="stylesheet" href="../project.css"/>
+</head>
+<body class="pdetail">
+  <div class="bg-fx" aria-hidden="true">
+    <div class="blob blob-1"></div><div class="blob blob-2"></div><div class="blob blob-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <header class="nav scrolled">
+    <a href="../index.html" class="nav__logo">
+      <span class="nav__logo-mark">V</span>
+      <span class="nav__logo-text">Víctor Escribano</span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#experience">Experience</a>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#contact">Contact</a>
+      <a href="../assets/Victor_Escribano_CV.pdf" class="nav__cv" target="_blank" rel="noopener">Resume ↗</a>
+    </nav>
+  </header>
+
+  <main class="pwrap reveal">
+    <a class="pback" href="../index.html#projects">← All projects</a>
+
+    <div class="phero">
+      <p class="phero__eyebrow">Computer Vision · One-day build</p>
+      <h1>Tennis Movement Analysis</h1>
+      <p class="phero__tagline">Turning a broadcast tennis feed into a top-view movement and heatmap analysis of both players.</p>
+      <div class="pmeta">
+        <div class="tags"><span>YOLO</span><span>OpenCV</span><span>Homography</span><span>Tracking</span></div>
+        
+      </div>
+      <div class="phero__img"><img src="../assets/img/tennis.jpg" alt="Tennis Movement Analysis"/></div>
+    </div>
+
+    <section class="psection prose">
+      <h2>Overview</h2>
+      <p>A one-day computer-vision project inspired by the US Open final between <strong>Carlos Alcaraz</strong> and <strong>Casper Ruud</strong>. A <strong>YOLO</strong> network detects both players in the broadcast feed and classifies them into their respective regions of the court.</p><p>Using planar <strong>homographies</strong>, the broadcast perspective is warped into a clean top-view of the court, where each player's position is plotted over time — turning a TV feed into a movement and density analysis of how the two players covered the court.</p>
+    </section>
+
+    <section class="psection"><h2>Demo</h2><div class="pvideo"><video controls preload="none" playsinline poster="../assets/img/tennis.jpg"><source src="../assets/img/proj/tennis_demo.mp4" type="video/mp4"/></video><p class="pvideo__cap">Player tracking and top-view court projection in motion</p></div></section>
+
+    <section class="psection">
+      <h2>Highlights</h2>
+      <ul class="plist"><li>YOLO player detection with region-of-interest classification</li><li>Planar homography projecting broadcast view to a top-view court</li><li>Per-player movement trails and density heatmaps</li><li>Built end-to-end in a single day</li></ul>
+    </section>
+
+    <section class="psection">
+      <h2>Gallery</h2>
+      <div class="pgallery pgallery--single"><figure><img src="../assets/img/tennis.jpg" alt="Detection, top-view projection and per-player density heatmap" loading="lazy"/><figcaption>Detection, top-view projection and per-player density heatmap</figcaption></figure></div>
+    </section>
+
+    <div class="pnext">
+      <span>© <span id="year"></span> Víctor Escribano García</span>
+      <a class="pback" href="../index.html#projects">← Back to all projects</a>
+    </div>
+  </main>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear();
+  document.querySelectorAll('.reveal').forEach(e=>e.classList.add('in'));</script>
+</body>
+</html>

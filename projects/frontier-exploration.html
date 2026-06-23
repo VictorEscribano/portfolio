@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Last Frontier Exploration — Víctor Escribano</title>
+  <meta name="description" content="Frontier-based autonomous exploration that maps and navigates unknown indoor environments on its own."/>
+  <meta property="og:title" content="Last Frontier Exploration — Víctor Escribano"/>
+  <meta property="og:description" content="Frontier-based autonomous exploration that maps and navigates unknown indoor environments on its own."/>
+  <meta property="og:image" content="../assets/img/exploration.jpg"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230b0f17'/%3E%3Ctext x='50' y='68' font-size='54' font-family='Arial' font-weight='bold' fill='%2335e0c0' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E"/>
+  <link rel="stylesheet" href="../styles.css"/>
+  <link rel="stylesheet" href="../project.css"/>
+</head>
+<body class="pdetail">
+  <div class="bg-fx" aria-hidden="true">
+    <div class="blob blob-1"></div><div class="blob blob-2"></div><div class="blob blob-3"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <header class="nav scrolled">
+    <a href="../index.html" class="nav__logo">
+      <span class="nav__logo-mark">V</span>
+      <span class="nav__logo-text">Víctor Escribano</span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#experience">Experience</a>
+      <a href="../index.html#projects">Projects</a>
+      <a href="../index.html#contact">Contact</a>
+      <a href="../assets/Victor_Escribano_CV.pdf" class="nav__cv" target="_blank" rel="noopener">Resume ↗</a>
+    </nav>
+  </header>
+
+  <main class="pwrap reveal">
+    <a class="pback" href="../index.html#projects">← All projects</a>
+
+    <div class="phero">
+      <p class="phero__eyebrow">Autonomous Robotics · ROS 2</p>
+      <h1>Last Frontier Exploration</h1>
+      <p class="phero__tagline">Frontier-based autonomous exploration that maps and navigates unknown indoor environments on its own.</p>
+      <div class="pmeta">
+        <div class="tags"><span>ROS2</span><span>SLAM</span><span>Gazebo</span><span>Python</span><span>Autonomy</span></div>
+        <div class="pmeta__links"><a class="pbtn pbtn--gh" href="https://github.com/VictorEscribano/PECORE" target="_blank" rel="noopener">GitHub ↗</a></div>
+      </div>
+      <div class="phero__img"><img src="../assets/img/exploration.jpg" alt="Last Frontier Exploration"/></div>
+    </div>
+
+    <section class="psection prose">
+      <h2>Overview</h2>
+      <p>A personal improvement on closest-frontier autonomous exploration, developed in <strong>ROS 2</strong> as part of the PECORE (Perception and Cognition in Robotic Exploration) Master's course at UPC-ETSEIB.</p><p>The robot incrementally builds an occupancy map of an unknown indoor environment, detects the <strong>frontiers</strong> between explored and unexplored space, and autonomously navigates toward them until the map is complete — combining mapping, localization and planning in a single exploration loop.</p>
+    </section>
+
+    <section class="psection"><h2>Demo</h2><div class="pvideo"><video controls preload="none" playsinline poster="../assets/img/exploration.jpg"><source src="../assets/img/proj/exploration_demo.mp4" type="video/mp4"/></video><p class="pvideo__cap">Autonomous frontier-based exploration in ROS 2 (Gazebo)</p></div></section>
+
+    <section class="psection">
+      <h2>Highlights</h2>
+      <ul class="plist"><li>Frontier detection on a live occupancy grid</li><li>Autonomous navigation to the nearest information frontier</li><li>Built on ROS 2 with Gazebo simulation</li><li>Mapping + localization + planning in one loop</li></ul>
+    </section>
+
+    <section class="psection">
+      <h2>Gallery</h2>
+      <div class="pgallery pgallery--single"><figure><img src="../assets/img/exploration.jpg" alt="RViz — live map building and frontier-driven navigation" loading="lazy"/><figcaption>RViz — live map building and frontier-driven navigation</figcaption></figure></div>
+    </section>
+
+    <div class="pnext">
+      <span>© <span id="year"></span> Víctor Escribano García</span>
+      <a class="pback" href="../index.html#projects">← Back to all projects</a>
+    </div>
+  </main>
+
+  <script>document.getElementById('year').textContent=new Date().getFullYear();
+  document.querySelectorAll('.reveal').forEach(e=>e.classList.add('in'));</script>
+</body>
+</html>
